@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d212b;
+  height: 100vh;
+}
+.img {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 10px;
+  background: #1d212b;
+}
+.img .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.img .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 1.5s;
+  transition-property: clip-path;
+}
+.img .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img .slide .info {
+  position: absolute;
+  top: 20px;
+  padding: 15px 30px;
+}
+.img .slide .info .sec h2 {
+  margin-left: 350px;
+}
+.img .slide .info .sec p {
+  margin-left: 290px;
+}
+.img .slide .info .sec1 h2 {
+  margin-left: 350px;
+}
+.img .slide .info .sec1 p {
+  margin-left: 290px;
+}
+.img .slide .info h2 {
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.img .slide .info p {
+  color: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.img .nav {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img .nav .btn {
+  background: rgba(21, 1, 1, 0.5);
+  width: 11px;
+  height: 11px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50px;
+}
+
+.img .nav .btn.active {
+  background: #2696e9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
