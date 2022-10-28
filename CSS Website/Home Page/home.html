@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigation bar</title>
+    <link rel="stylesheet" href="homeccc.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav id="navbar">
+        <img class="logo" src="image-removebg-preview.png" alt="logo" />
+
+        <br />
+        <ul id="menu">
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>ACTIVITIES</li>
+          <li>MENTORS</li>
+          <li>TEAM</li>
+          <li>ALUMNI</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+      window.onscroll = function () {
+        if (window.pageYOffset >= menu.offsetTop) {
+          navbar.classList.add("sticky");
+        } else navbar.classList.remove("sticky");
+      };
+    </script>
+
+    <img src="new (1).png" alt="" />
+  </body>
+</html>
