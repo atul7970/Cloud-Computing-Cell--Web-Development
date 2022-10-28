@@ -1,0 +1,21 @@
+
+body {
+  margin: 0;
+}
+/* div {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 800px;
+            width: 1500px;
+            border-radius: 500 500 550 520;
+              border-color: white;
+            background-color: white;
+            border-color: white;
+            z-index: 5;
+        } */
+h1{
+  color : white;
+  z-index: 3;
+}
